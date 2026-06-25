@@ -27,6 +27,7 @@ import colorama
 
 """
 
+colorama.init()
 
 class Portfolio:
     def __init__(self, 
@@ -307,8 +308,4 @@ while True:
             os.system("cls")
             my_github_link()
             break
-
-        
-              
-
-
+            
