@@ -134,6 +134,17 @@ def my_best_works():
         if keyboard.is_pressed("Escape"):
             break
     os.system("cls")
+
+def my_github_link():
+    os.system("cls")
+    print(f"---------------Ссылка на GitHub---------------\n"
+            f"Ссылка на GitHub: {colorama.Fore.CYAN}{my_portfolio.GitHub_link}{colorama.Style.RESET_ALL}"
+            f"\n\n{colorama.Fore.GREEN}Чтобы выйти нажмите Escape{colorama.Style.RESET_ALL}"
+        )
+    while True:
+        if keyboard.is_pressed("Escape"):
+            break
+    os.system("cls")
     
 
 
@@ -227,7 +238,7 @@ best_works = (
 )
 
 #Ссылка на ваш проект/портфолио
-GitHub_link = "" 
+GitHub_link = "https://github.com/MolenP/Portfolio.git" 
 
 #--------------------------------------------------------------
 
@@ -290,6 +301,11 @@ while True:
         if keyboard.is_pressed("7"):
             os.system("cls")
             my_best_works()
+            break
+
+        if keyboard.is_pressed("8"):
+            os.system("cls")
+            my_github_link()
             break
 
         
